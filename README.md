@@ -10,9 +10,6 @@ A fun and interactive web-based **Tic-Tac-Toe** game built using **HTML, CSS, an
 
 - 🧠 **Two Game Modes**: Play with a friend or challenge the AI bot.
 - 🎯 **Minimax AI**: Implements the Minimax algorithm to provide a challenging opponent.
-- 🎨 **Responsive Design**: Works well on desktops, tablets, and mobile devices.
-- 📊 **Score Tracking**: Keeps track of wins for both players.
-- 🔊 **Optional Sound Effects**: Enhances gameplay experience.
 - 🎨 **Color Themes**: Stylish modern interface with customizable background and colors.
 - 🛠️ **User-Friendly UI**: Clean layout with intuitive controls and setup screen.
 
