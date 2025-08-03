@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-purple-900 flex flex-col items-center justify-center min-h-screen p-4">
+
+  <div id="setupScreen" class="screen text-center max-w-md">
+    <h1 class="title-font text-5xl font-bold mb-8 text-green-400">Tic-Tac-Toe</h1>
+    <div class="bg-gray-800/50 backdrop-blur-sm p-8 rounded-lg shadow-2xl">
+      <div class="mb-4">
+        <label for="player1Name" class="block mb-2 text-lg text-gray-300">Player 1 (X)</label>
+        <input type="text" id="player1Name" class="w-full p-3 rounded bg-gray-700 text-white border-2 border-gray-600 focus:border-green-400 focus:outline-none" value="Player 1" />
+      </div>
+      <div id="player2NameContainer" class="mb-6">
+        <label for="player2Name" class="block mb-2 text-lg text-gray-300">Player 2 (O)</label>
+        <input type="text" id="player2Name" class="w-full p-3 rounded bg-gray-700 text-white border-2 border-gray-600 focus:border-yellow-400 focus:outline-none" value="Player 2" />
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <button id="vsHumanBtn" class="btn flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6">Play vs Human</button>
+        <button id="vsBotBtn" class="btn flex-1 bg-purple-600 hover:bg-purple-700 text-white py-3 px-6">Play vs Bot</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="gameScreen" class="screen hidden text-center max-w-lg flex flex-col items-center">
+    <h1 class="title-font text-4xl font-bold mb-4 text-green-400">Tic-Tac-Toe</h1>
+    <h2 id="status" class="text-2xl font-semibold mb-6 text-gray-300 h-8"></h2>
+    <div class="inline-block">
+      <div id="gameBoard" class="grid grid-cols-3 w-full max-w-xs sm:max-w-sm mx-auto aspect-square">
+        <div class="cell" data-cell-index="0"></div><div class="cell" data-cell-index="1"></div><div class="cell" data-cell-index="2"></div>
+        <div class="cell" data-cell-index="3"></div><div class="cell" data-cell-index="4"></div><div class="cell" data-cell-index="5"></div>
+        <div class="cell" data-cell-index="6"></div><div class="cell" data-cell-index="7"></div><div class="cell" data-cell-index="8"></div>
+      </div>
+      <div class="flex gap-4 mt-8">
+        <button id="restartButton" class="btn flex-1 bg-blue-600 hover:bg-blue-700 text-white py-3 px-8">Restart</button>
+        <button id="newGameButton" class="btn flex-1 bg-gray-600 hover:bg-gray-700 text-white py-3 px-8">New Game</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
